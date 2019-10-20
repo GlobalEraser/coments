@@ -52,7 +52,6 @@ public class Basket<E>  {
         Node<E> tmp = first;
         Node<E> prev = null;
         while(tmp != null){
-            predicate.test(tmp.value);
             if(predicate.test(tmp.value)){
                 if(prev == null){
                     first = tmp.next;
